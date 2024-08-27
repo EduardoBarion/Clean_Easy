@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_27_154842) do
     t.float "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "min_working_hours"
   end
 
   create_table "users", force: :cascade do |t|
