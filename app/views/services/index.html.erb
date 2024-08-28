@@ -3,6 +3,7 @@
   <ul>
     <% @services.each do |service| %>
       <li>
+<<<<<<< HEAD
         <h2><%= service.user.name %></h2>
         <p><%= service.description %></p>
         <p>Preço: $ <%= service.price %></p>
@@ -10,7 +11,14 @@
         <%= link_to 'Editar', edit_service_path(service) %> |
       <%= link_to 'Apagar', service, method: :delete, data: { confirm: 'Tem a certeza?' } %>
       <hr>
+=======
+        <h3><%= service.description %></h3>
+        <h5><%= service.user.name %></h5>
+        <p>Preço: <%= service.price %></p>
+        <%= link_to "Saiba mais", service_path(service) %>
+>>>>>>> master
       </li>
     <% end %>
   </ul>
-<%= link_to 'Início', root_path %>
+ <%= link_to 'Início', root_path,class: "btn btn-primary btn-lg" %>
+</div>
