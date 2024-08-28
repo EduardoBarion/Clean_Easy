@@ -16,27 +16,27 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
   end
 
-  def update
-    @booking = Booking.find(params[:id])
-    if @booking.update(post_params)
-      redirect_to @booking
-    else
-      render :edit
-    end
-  end
+  # def update
+  #   @booking = Booking.find(params[:id])
+  #   if @booking.update(post_params)
+  #     redirect_to @booking
+  #   else
+  #     render :edit
+  #   end
+  # end
 
-  def edit
-    @booking = Booking.find(params[:id])
-  end
+  # def edit
+  #   @booking = Booking.find(params[:id])
+  # end
 
-  def destroy
-    @booking = Booking.find(params[:id])
-    @booking.destroy
-  end
+  # def destroy
+  #   @booking = Booking.find(params[:id])
+  #   @booking.destroy
+  # end
 
-  private
+  # private
 
-  def booking_params
-    params.require(:booking).permit(:date)
-  end
+  # def booking_params
+  #   params.require(:booking).permit(:date)
+  # end
 end
