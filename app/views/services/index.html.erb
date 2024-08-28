@@ -3,11 +3,12 @@
   <ul>
     <% @services.each do |service| %>
       <li>
-        <h2><%= service.user.name %></h2>
-        <p><%= service.description %></p>
+        <h3><%= service.description %></h3>
+        <h5><%= service.user.name %></h5>
         <p>Preço: <%= service.price %></p>
         <%= link_to "Saiba mais", service_path(service) %>
       </li>
     <% end %>
   </ul>
-<%= link_to 'Início', root_path %>
+ <%= link_to 'Início', root_path,class: "btn btn-primary btn-lg" %>
+</div>
