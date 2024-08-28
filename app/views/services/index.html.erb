@@ -1,0 +1,12 @@
+  <title>Lista de Serviços</title>
+   <h1>Serviços Disponíveis</h1>
+
+  <ul>
+    <% @services.each do |service| %>
+      <li>
+        <h2><%= service.user.name %></h2>
+        <p><%= service.description %></p>
+        <p>Preço: <%= service.price %></p>
+      </li>
+    <% end %>
+  </ul>
