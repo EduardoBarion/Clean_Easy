@@ -6,16 +6,18 @@
   align-items: center;
   height: 100vh;
   margin: 0;
+  gap: 30px;
 }
 
 .card {
-  background-color: #e2e2e2;
+  background-color: #efeff2;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  box-shadow: 10px 20px 4px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
   overflow: hidden;
   text-align: center;
   transition: transform 0.2s;
+  height: 500px;
 }
 
 .card:hover {
@@ -54,4 +56,8 @@
 
 .card-button:hover {
   background-color: #0056b3;
+}
+
+.imgcard {
+  background-color:#a1a2fb;
 }
