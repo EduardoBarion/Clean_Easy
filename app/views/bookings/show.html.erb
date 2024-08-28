@@ -1,5 +1,5 @@
 <h1><%= @booking.user.name %></h1>
-<p> Serviço de -<%= @booking.service.description %></p>
-<p> Price - R$<%= @booking.proposed_price %></p>
+<p> Serviço de - <%= @booking.service.description %></p>
+<p> Preço - R$<%= @booking.service.price %></p>
 <p> Dia do agendamento - <%= @booking.date %></p>
-<%= link_to 'Back to home page', root_path %>
+<%= link_to 'Todos agendamentos', bookings_path %>
