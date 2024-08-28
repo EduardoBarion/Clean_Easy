@@ -1,7 +1,9 @@
 <%= form_with model: @service, local: true do |f| %>
   <%= f.label :description %>
   <%= f.text_field :description %>
-  <%= f.label :price, "Price (R$)" %>
+  <%= f.label :price, "Preço (R$)" %>
   <%= f.number_field :price, step: 0.01, min: 0 %>
   <%= f.submit %>
 <% end %>
+<%= link_to 'Todo os serviços', services_path %>
+

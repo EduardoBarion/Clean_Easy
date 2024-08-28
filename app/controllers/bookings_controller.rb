@@ -38,9 +38,9 @@ class BookingsController < ApplicationController
   #   @booking.destroy
   # end
 
-  # private
+  private
 
-  # def booking_params
-  #   params.require(:booking).permit(:date)
-  # end
+  def booking_params
+    params.require(:booking).permit(:date)
+  end
 end
