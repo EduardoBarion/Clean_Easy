@@ -4,9 +4,9 @@ class BookingsController < ApplicationController
   end
 
   def create
-    @booking = Booking.new(post_params)
+    @booking = Booking.new(booking_params)
     if @booking.save
-      redirect_to @booking
+      redirect_to service_booking_path(@booking)
     else
       render :new, status: :unprocessable_entity
     end
@@ -29,14 +29,14 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
   end
 
-  def delete
+  def destroy
     @booking = Booking.find(params[:id])
     @booking.destroy
   end
 
   private
 
-  def post_params
-    params.require(:booking).permite(:proposed_price, :status, :date)
+  def booking_params
+    params.require(:booking).permit(:date)
   end
 end
