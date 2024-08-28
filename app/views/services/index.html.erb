@@ -7,6 +7,7 @@
         <h2><%= service.user.name %></h2>
         <p><%= service.description %></p>
         <p>Preço: <%= service.price %></p>
+        <%= link_to "Saiba mais", service_path(service) %>
       </li>
     <% end %>
   </ul>
