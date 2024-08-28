@@ -1,5 +1,4 @@
 class BookingsController < ApplicationController
-
   def new
     @booking = Booking.new
   end
@@ -34,10 +33,10 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
     @booking.destroy
   end
-end
 
-private
+  private
 
   def post_params
     params.require(:booking).permite(:proposed_price, :status, :date)
   end
+end
