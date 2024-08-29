@@ -9,6 +9,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :name, :cpf, :address, :phone, :credit_card, :worker, presence: true
-  validates :cpf, length: { minimum: 10 }
+  # validates :name, :cpf, :address, :phone, :credit_card, :worker, presence: true
+  # validates :cpf, length: { minimum: 10 }
 end

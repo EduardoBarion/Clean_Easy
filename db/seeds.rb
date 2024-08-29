@@ -135,176 +135,176 @@ user9 = User.new(
 user9.save!
 puts 'Finished creating users!'
 
-puts 'Creating 10 fake services...'
-service = Service.new(
-  price: 80,
-  description: "Limpeza padrão",
-  min_working_hours: "2",
-  user: user
-)
-service.save!
+# puts 'Creating 10 fake services...'
+# service = Service.new(
+#   price: 80,
+#   description: "Limpeza padrão",
+#   min_working_hours: "2",
+#   user: user
+# )
+# service.save!
 
-service1 = Service.new(
-  price: 100,
-  description: "Limpeza pesada",
-  min_working_hours: 4,
-  user: user1
-)
-service1.save!
+# service1 = Service.new(
+#   price: 100,
+#   description: "Limpeza pesada",
+#   min_working_hours: 4,
+#   user: user1
+# )
+# service1.save!
 
-service2 = Service.new(
-  price: 80,
-  description: "Limpeza padrão",
-  min_working_hours: 3,
-  user: user2
-)
-service2.save!
+# service2 = Service.new(
+#   price: 80,
+#   description: "Limpeza padrão",
+#   min_working_hours: 3,
+#   user: user2
+# )
+# service2.save!
 
-service3 = Service.new(
-  price: 120,
-  description: "Limpeza pós obra",
-  min_working_hours: 6,
-  user: user3
-)
-service3.save!
+# service3 = Service.new(
+#   price: 120,
+#   description: "Limpeza pós obra",
+#   min_working_hours: 6,
+#   user: user3
+# )
+# service3.save!
 
-service4 = Service.new(
-  price: 90,
-  description: "Limpeza pré ou pós mudança",
-  min_working_hours: 5,
-  user: user4
-)
-service4.save!
+# service4 = Service.new(
+#   price: 90,
+#   description: "Limpeza pré ou pós mudança",
+#   min_working_hours: 5,
+#   user: user4
+# )
+# service4.save!
 
-service5 = Service.new(
-  price: 85,
-  description: "Limpeza padrão",
-  min_working_hours: 2,
-  user: user5
-)
-service5.save!
+# service5 = Service.new(
+#   price: 85,
+#   description: "Limpeza padrão",
+#   min_working_hours: 2,
+#   user: user5
+# )
+# service5.save!
 
-service6 = Service.new(
-  price: 110,
-  description: "Limpeza pesada",
-  min_working_hours: 7,
-  user: user6
-)
-service6.save!
+# service6 = Service.new(
+#   price: 110,
+#   description: "Limpeza pesada",
+#   min_working_hours: 7,
+#   user: user6
+# )
+# service6.save!
 
-service7 = Service.new(
-  price: 95,
-  description: "Limpeza pós obra",
-  min_working_hours: 4,
-  user: user7
-)
-service7.save!
+# service7 = Service.new(
+#   price: 95,
+#   description: "Limpeza pós obra",
+#   min_working_hours: 4,
+#   user: user7
+# )
+# service7.save!
 
-service8 = Service.new(
-  price: 130,
-  description: "Limpeza pré ou pós mudança",
-  min_working_hours: 8,
-  user: user8
-)
-service8.save!
+# service8 = Service.new(
+#   price: 130,
+#   description: "Limpeza pré ou pós mudança",
+#   min_working_hours: 8,
+#   user: user8
+# )
+# service8.save!
 
-service9 = Service.new(
-  price: 75,
-  description: "Limpeza padrão",
-  min_working_hours: 3,
-  user: user9
-)
-service9.save!
-puts 'Finished creating services!'
+# service9 = Service.new(
+#   price: 75,
+#   description: "Limpeza padrão",
+#   min_working_hours: 3,
+#   user: user9
+# )
+# service9.save!
+# puts 'Finished creating services!'
 
-puts 'Creating 10 fake services...'
-booking = Booking.new(
-  proposed_price: 80,
-  status: true,
-  date: Date.today,
-  user: user,
-  service: service
-)
-booking.save!
+# puts 'Creating 10 fake services...'
+# booking = Booking.new(
+#   proposed_price: 80,
+#   status: true,
+#   date: Date.today,
+#   user: user,
+#   service: service
+# )
+# booking.save!
 
-booking1 = Booking.new(
-  proposed_price: 95,
-  status: true,
-  date: Date.today + 3,
-  user: user1,
-  service: service1
-)
-booking1.save!
+# booking1 = Booking.new(
+#   proposed_price: 95,
+#   status: true,
+#   date: Date.today + 3,
+#   user: user1,
+#   service: service1
+# )
+# booking1.save!
 
-booking2 = Booking.new(
-  proposed_price: 85,
-  status: true,
-  date: Date.today + 5,
-  user: user2,
-  service: service2
-)
-booking2.save!
+# booking2 = Booking.new(
+#   proposed_price: 85,
+#   status: true,
+#   date: Date.today + 5,
+#   user: user2,
+#   service: service2
+# )
+# booking2.save!
 
-booking3 = Booking.new(
-  proposed_price: 125,
-  status: true,
-  date: Date.today + 7,
-  user: user3,
-  service: service3
-)
-booking3.save!
+# booking3 = Booking.new(
+#   proposed_price: 125,
+#   status: true,
+#   date: Date.today + 7,
+#   user: user3,
+#   service: service3
+# )
+# booking3.save!
 
-booking4 = Booking.new(
-  proposed_price: 100,
-  status: true,
-  date: Date.today + 10,
-  user: user4,
-  service: service4
-)
-booking4.save!
+# booking4 = Booking.new(
+#   proposed_price: 100,
+#   status: true,
+#   date: Date.today + 10,
+#   user: user4,
+#   service: service4
+# )
+# booking4.save!
 
-booking5 = Booking.new(
-  proposed_price: 90,
-  status: true,
-  date: Date.today + 2,
-  user: user5,
-  service: service5
-)
-booking5.save!
+# booking5 = Booking.new(
+#   proposed_price: 90,
+#   status: true,
+#   date: Date.today + 2,
+#   user: user5,
+#   service: service5
+# )
+# booking5.save!
 
-booking6 = Booking.new(
-  proposed_price: 115,
-  status: true,
-  date: Date.today + 4,
-  user: user6,
-  service: service6
-)
-booking6.save!
+# booking6 = Booking.new(
+#   proposed_price: 115,
+#   status: true,
+#   date: Date.today + 4,
+#   user: user6,
+#   service: service6
+# )
+# booking6.save!
 
-booking7 = Booking.new(
-  proposed_price: 105,
-  status: true,
-  date: Date.today + 6,
-  user: user7,
-  service: service7
-)
-booking7.save!
+# booking7 = Booking.new(
+#   proposed_price: 105,
+#   status: true,
+#   date: Date.today + 6,
+#   user: user7,
+#   service: service7
+# )
+# booking7.save!
 
-booking8 = Booking.new(
-  proposed_price: 140,
-  status: true,
-  date: Date.today + 9,
-  user: user8,
-  service: service8
-)
-booking8.save!
+# booking8 = Booking.new(
+#   proposed_price: 140,
+#   status: true,
+#   date: Date.today + 9,
+#   user: user8,
+#   service: service8
+# )
+# booking8.save!
 
-booking9 = Booking.new(
-  proposed_price: 80,
-  status: true,
-  date: Date.today + 3,
-  user: user9,
-  service: service9
-)
-booking9.save!
+# booking9 = Booking.new(
+#   proposed_price: 80,
+#   status: true,
+#   date: Date.today + 3,
+#   user: user9,
+#   service: service9
+# )
+# booking9.save!
 puts 'Finished creating bookings!'

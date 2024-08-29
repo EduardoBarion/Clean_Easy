@@ -1,9 +1,7 @@
-<%= form_with model: @service, local: true do |f| %>
-  <%= f.label :description %>
-  <%= f.text_field :description %>
-  <%= f.label :price, "Preço (R$)" %>
-  <%= f.number_field :price, step: 0.01, min: 0 %>
+<%= simple_form_for @service do |f| %>
+  <%= f.input :description %>
+  <%= f.input :price %>
   <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <%= f.submit %>
+  <%= f.button :submit %>
 <% end %>
 <%= link_to 'Todo os serviços', services_path %>
