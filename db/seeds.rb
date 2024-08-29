@@ -65,7 +65,6 @@ Service.destroy_all
 User.destroy_all
 Booking.destroy_all
 puts 'DB cleaned.'
-
 puts 'Creating 10 fake users...'
 user = User.new(
   email: 'admin@admin.com',
@@ -79,7 +78,6 @@ user = User.new(
 )
 user.photo.attach(io: file, filename: "photo_perfil.png", content_type: "image/jpg")
 user.save!
-
 user1 = User.new(
   email: 'user1@user1.com',
   password: '123456',
@@ -92,7 +90,6 @@ user1 = User.new(
 )
 user1.photo.attach(io: file1, filename: "photo_perfil.png", content_type: "image/jpg")
 user1.save!
-
 user2 = User.new(
   email: 'user2@user2.com',
   password: '123456',
@@ -105,7 +102,6 @@ user2 = User.new(
 )
 user2.photo.attach(io: file2, filename: "photo_perfil.png", content_type: "image/jpg")
 user2.save!
-
 user3 = User.new(
   email: 'user3@user3.com',
   password: '123456',
@@ -118,7 +114,6 @@ user3 = User.new(
 )
 user3.photo.attach(io: file3, filename: "photo_perfil.png", content_type: "image/jpg")
 user3.save!
-
 user4 = User.new(
   email: 'user4@user4.com',
   password: '123456',
@@ -131,7 +126,6 @@ user4 = User.new(
 )
 user4.photo.attach(io: file4, filename: "photo_perfil.png", content_type: "image/jpg")
 user4.save!
-
 user5 = User.new(
   email: 'user5@user5.com',
   password: '123456',
@@ -144,7 +138,6 @@ user5 = User.new(
 )
 user5.photo.attach(io: file5, filename: "photo_perfil.png", content_type: "image/jpg")
 user5.save!
-
 user6 = User.new(
   email: 'user6@user6.com',
   password: '123456',
@@ -157,7 +150,6 @@ user6 = User.new(
 )
 user6.photo.attach(io: file6, filename: "photo_perfil.png", content_type: "image/jpg")
 user6.save!
-
 user7 = User.new(
   email: 'user7@user7.com',
   password: '123456',
@@ -170,7 +162,6 @@ user7 = User.new(
 )
 user7.photo.attach(io: file7, filename: "photo_perfil.png", content_type: "image/jpg")
 user7.save!
-
 user8 = User.new(
   email: 'user8@user8.com',
   password: '123456',
@@ -183,7 +174,6 @@ user8 = User.new(
 )
 user8.photo.attach(io: file8, filename: "photo_perfil.png", content_type: "image/jpg")
 user8.save!
-
 user9 = User.new(
   email: 'user9@user9.com',
   password: '123456',
@@ -197,7 +187,6 @@ user9 = User.new(
 user9.photo.attach(io: file9, filename: "photo_perfil.png", content_type: "image/jpg")
 user9.save!
 puts 'Finished creating users!'
-
 puts 'Creating 10 fake services...'
 service = Service.new(
   price: 80,
@@ -326,7 +315,6 @@ booking = Booking.new(
   service: service
 )
 booking.save!
-
 booking1 = Booking.new(
   proposed_price: 95,
   status: true,
@@ -335,7 +323,6 @@ booking1 = Booking.new(
   service: service1
 )
 booking1.save!
-
 booking2 = Booking.new(
   proposed_price: 85,
   status: true,
@@ -344,7 +331,6 @@ booking2 = Booking.new(
   service: service2
 )
 booking2.save!
-
 booking3 = Booking.new(
   proposed_price: 125,
   status: true,
@@ -353,7 +339,6 @@ booking3 = Booking.new(
   service: service3
 )
 booking3.save!
-
 booking4 = Booking.new(
   proposed_price: 100,
   status: true,
@@ -362,7 +347,6 @@ booking4 = Booking.new(
   service: service4
 )
 booking4.save!
-
 booking5 = Booking.new(
   proposed_price: 90,
   status: true,
@@ -371,7 +355,6 @@ booking5 = Booking.new(
   service: service5
 )
 booking5.save!
-
 booking6 = Booking.new(
   proposed_price: 115,
   status: true,
@@ -380,7 +363,6 @@ booking6 = Booking.new(
   service: service6
 )
 booking6.save!
-
 booking7 = Booking.new(
   proposed_price: 105,
   status: true,
@@ -389,7 +371,6 @@ booking7 = Booking.new(
   service: service7
 )
 booking7.save!
-
 booking8 = Booking.new(
   proposed_price: 140,
   status: true,
@@ -398,7 +379,6 @@ booking8 = Booking.new(
   service: service8
 )
 booking8.save!
-
 booking9 = Booking.new(
   proposed_price: 80,
   status: true,
