@@ -53,6 +53,7 @@ gem "sassc-rails"
 
 
 gem "devise"
+gem "dotenv-rails"
 
 
 group :development, :test do
