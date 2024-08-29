@@ -10,7 +10,7 @@
           <div class="card-body">
             <h3 class="card-title"><%= service.description %></h3>
             <h5 class="card-subtitle mb-2 text-muted"><%= service.user.name %></h5>
-            <p class="card-text">Preço: R$<%= service.price %></p>
+            <p class="card-text">Preço: <%= number_to_currency(service.price, unit: 'R$', format: '%u %n', separator: ',', delimiter: '.') %></p>
           </div>
           <div class="card-footer">
             <%= link_to "Saiba mais", service_path(service), class: "btn btn-outline-newgreen btn-sm rounded-pill" %>
