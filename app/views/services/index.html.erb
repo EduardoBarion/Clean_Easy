@@ -1,19 +1,20 @@
-<div class="container">
-  <h1>Serviços Disponíveis</h1>
+  <div class="d-flex justify-content-center p-5">
+    <h1>Serviços Disponíveis</h1>
+  </div>
   <div class="container">
   <div class="row">
     <% @services.each do |service| %>
       <div class="col-md-3 mb-3">
         <div class="card h-100">
-
+          <img src="https://blog.parafuzo.com/wp-content/uploads/2021/09/household-cleaning-supplies-480x288.jpeg" />
           <div class="card-body">
             <h3 class="card-title"><%= service.description %></h3>
             <h5 class="card-subtitle mb-2 text-muted"><%= service.user.name %></h5>
             <p class="card-text">Preço: <%= number_to_currency(service.price, unit: 'R$', format: '%u %n', separator: ',', delimiter: '.') %></p>
           </div>
           <div class="card-footer">
-            <%= link_to "Saiba mais", service_path(service), class: "btn btn-outline-success btn-sm rounded-pill" %>
-            <%= link_to 'Editar', edit_service_path(service), class: "btn btn-outline-secondary btn-sm rounded-pill" %>
+            <%= link_to "Saiba mais", service_path(service), class: "btn btn-outline-newgreen btn-sm rounded-pill" %>
+            <%= link_to 'Editar', edit_service_path(service), class: "btn btn-outline-newgreen btn-sm rounded-pill" %>
             <%= link_to 'Apagar', service, method: :delete, data: { confirm: 'Tem a certeza?' }, class:"btn btn-outline-danger btn-sm rounded-pill" %>
           </div>
         </div>
@@ -21,9 +22,7 @@
     <% end %>
   </div>
 </div>
-
  <div class="container mb-5 mt-4">
-  <%= link_to 'Início', root_path, class: "btn btn-primary btn-lg w-100" %>
+    <%= link_to 'Início', root_path, class: "btn btn-primary btn-lg w-100" %>
 </div>
-
 </div>
