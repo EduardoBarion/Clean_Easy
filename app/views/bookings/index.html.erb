@@ -1,20 +1,38 @@
- <div class="container">
+<div class="container">
+  <h1 class="my-5 text-center"><strong>Seus agendamentos</strong></h1>
 
- <h1>Seus agendamentos</h1>
-<ul>
-<% @bookings.each do |booking| %>
-  <div class="d-flex">
-    <div class="card w-50 h-50 mb-5" >
-      <div class="card-body">
-        <h5 class="card-title"><%= booking.service.user.name %></h5>
-        <p class="card-text"><strong>Tipo de serviço: </strong><%= booking.service.description %></p>
-        <p class="card-text"><strong>Dia: </strong><%= booking.date %></p>
-        <%= link_to 'Mais informacoes', service_booking_path(booking.service, booking) %>
-      </div>
-    </div>
-  </div>
-  <% end %>
-</ul>
-<%= link_to 'Início', root_path %>
+  <ul class="cards">
+    <% @bookings.each do |booking| %>
+      <li class="card-item mb-5">
+        <div class="card-body h-100 card">
+          <h5 class="card-title"><strong><%= booking.service.user.name %></strong></h5>
+          <p class="card-text"><strong>Tipo de serviço: </strong><%= booking.service.description %></p>
+          <p class="card-text"><strong>Dia: </strong><%= booking.date.strftime('%d/%m/%Y') %></p>
+          <%= link_to 'Mais informações', service_booking_path(booking.service, booking), class:'btn btn-outline-newgreen' %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
 
+
+  <%# TALVEZ DEPOIS %>
+  <%# <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav> %>
+
+  <%= link_to 'Início', root_path %>
 </div>
