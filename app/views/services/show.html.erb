@@ -1,6 +1,27 @@
 <div class=container>
   <h1><strong><%= @service.user.name %></strong></h1>
   <h4><strong>Serviço:</strong> <%= @service.description %></h4>
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <% @service.photos.each_with_index do |photo, index| %>
+        <div class="carousel-item <%= 'active' if index == 0 %>">
+          <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill, class: "d-block w-100", alt: "Photo #{index + 1}" %>
+        </div>
+      <% end %>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
   <h5><strong>Confira o que está incluíso no serviço de Limpeza Padrão</strong></h5>
   <p>Para residências acima de 120m², recomendamos que o serviço seja realizado por 08 horas com dois profissionais ou que seja agendado mais de um dia na semana.</p>
   <p><strong>BANHEIROS</strong></p>
@@ -156,10 +177,6 @@
   <p>• Lavagem de pisos e remoção de sujeiras acumuladas.</p>
   <p>• Limpeza de móveis externos e áreas de lazer.</p>
   <p>• Limpeza de portas de vidro externas e janelas.</p>
-
- <h5><strong> </strong></h5>
-  <p><strong> </strong></p>
-  <p> </p>
 
   <%= link_to "Agende agora",  new_service_booking_path(@service), class: "btn btn-outline-success btn-sm rounded-pill" %>
   <%= link_to 'Todo os serviços', services_path,class: "btn btn-outline-success btn-sm rounded-pill" %>
