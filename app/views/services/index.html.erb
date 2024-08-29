@@ -1,5 +1,6 @@
-<div class="container">
-  <h1>Serviços Disponíveis</h1>
+  <div class="d-flex justify-content-center p-5">
+    <h1>Serviços Disponíveis</h1>
+  </div>
   <div class="container">
   <div class="row">
     <% @services.each do |service| %>
@@ -12,8 +13,8 @@
             <p class="card-text">Preço: R$<%= service.price %></p>
           </div>
           <div class="card-footer">
-            <%= link_to "Saiba mais", service_path(service), class: "btn btn-outline-success btn-sm rounded-pill" %>
-            <%= link_to 'Editar', edit_service_path(service), class: "btn btn-outline-secondary btn-sm rounded-pill" %>
+            <%= link_to "Saiba mais", service_path(service), class: "btn btn-outline-newgreen btn-sm rounded-pill" %>
+            <%= link_to 'Editar', edit_service_path(service), class: "btn btn-outline-newgreen btn-sm rounded-pill" %>
             <%= link_to 'Apagar', service, method: :delete, data: { confirm: 'Tem a certeza?' }, class:"btn btn-outline-danger btn-sm rounded-pill" %>
           </div>
         </div>
@@ -21,9 +22,7 @@
     <% end %>
   </div>
 </div>
-
  <div class="container mb-5 mt-4">
-  <%= link_to 'Início', root_path, class: "btn btn-primary btn-lg w-100" %>
+    <%= link_to 'Início', root_path, class: "btn btn-primary btn-lg w-100" %>
 </div>
-
 </div>
