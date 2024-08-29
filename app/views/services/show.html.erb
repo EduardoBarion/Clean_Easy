@@ -1,165 +1,160 @@
 <div class=container>
   <h1><strong><%= @service.user.name %></strong></h1>
   <h4><strong>Serviço:</strong> <%= @service.description %></h4>
-  <h5><strong>Confira o que está incluíso no serviço de Limpeza Padrão</strong></h5>
-  <p>Para residências acima de 120m², recomendamos que o serviço seja realizado por 08 horas com dois profissionais ou que seja agendado mais de um dia na semana.</p>
-  <p><strong>BANHEIROS</strong></p>
-  <p>• Limpeza completa da pia, vaso sanitário, banheira e box.</p>
-  <p>• Limpeza de espelhos, vidros e azulejos.</p>
-  <p>• Higienização dos pisos e revestimentos de parede.</p>
-  <p>• Higienização dos pisos e revestimentos de parede.</p>
-  <p>• Remoção de lixo e limpeza de lixeiras.</p>
-  <p>• Limpeza de portas e janelas internas.</p>
-  <p>• Limpeza de portas e janelas internas.</p>
 
-  <p><strong>COZINHA</strong></p>
-  <p>• Lavar louças e utensílios.</p>
-  <p>• Limpeza de bancadas e armários.</p>
-  <p>• Limpeza de pisos, azulejos e revestimentos.</p>
-  <p>• Limpeza externa de eletrodomésticos (geladeira, fogão, micro-ondas).</p>
-  <p>• Remoção de lixo e limpeza de lixeiras.</p>
-  <p>• Limpeza de portas e janelas internas.</p>
+  <% if @service.description == 'Limpeza padrão' %>
+    <h5><strong>Confira o que está incluíso no serviço de Limpeza Padrão</strong></h5>
+    <p>Para residências acima de 120m², recomendamos que o serviço seja realizado por 08 horas com dois profissionais ou que seja agendado mais de um dia na semana.</p>
+    <p><strong>BANHEIROS</strong></p>
+    <p>• Limpeza completa da pia, vaso sanitário, banheira e box.</p>
+    <p>• Limpeza de espelhos, vidros e azulejos.</p>
+    <p>• Higienização dos pisos e revestimentos de parede.</p>
+    <p>• Higienização dos pisos e revestimentos de parede.</p>
+    <p>• Remoção de lixo e limpeza de lixeiras.</p>
+    <p>• Limpeza de portas e janelas internas.</p>
+    <p>• Limpeza de portas e janelas internas.</p>
 
-  <p><strong>QUARTOS</strong></p>
-  <p>• Limpeza de móveis, superfícies e pisos.</p>
-  <p>• Limpeza de espelhos e vidros.</p>
-  <p>• Limpeza de portas e janelas internas.</p>
-  <p>• Arrumação da cama e organização de roupas expostas.</p>
+    <p><strong>COZINHA</strong></p>
+    <p>• Lavar louças e utensílios.</p>
+    <p>• Limpeza de bancadas e armários.</p>
+    <p>• Limpeza de pisos, azulejos e revestimentos.</p>
+    <p>• Limpeza externa de eletrodomésticos (geladeira, fogão, micro-ondas).</p>
+    <p>• Remoção de lixo e limpeza de lixeiras.</p>
+    <p>• Limpeza de portas e janelas internas.</p>
 
-  <p><strong>SALA</strong></p>
-  <p>• Limpeza e aspiração de sofás, poltronas e tapetes.</p>
-  <p>• Limpeza de móveis, portas e janelas internas.</p>
-  <p>• Limpeza de pisos e superfícies.</p>
-  <p>• Limpeza de vidros.</p>
+    <p><strong>QUARTOS</strong></p>
+    <p>• Limpeza de móveis, superfícies e pisos.</p>
+    <p>• Limpeza de espelhos e vidros.</p>
+    <p>• Limpeza de portas e janelas internas.</p>
+    <p>• Arrumação da cama e organização de roupas expostas.</p>
 
-
-  <p><strong>ÁREA DE SERVIÇO</strong></p>
-  <p>• Limpeza de pisos e azulejos.</p>
-  <p>• Limpeza de tanques, máquinas de lavar e superfícies.</p>
-  <p>• Organização de produtos de limpeza e itens diversos.</p>
-
-  <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-
-  <h5><strong>Confira o que está incluído no serviço de Limpeza Pesada</strong></h5>
-  <p>Indicamos a limpeza pesada para locais que estão há muito tempo sem cuidados ou que possuem sujeira acumulada e precisam de uma atenção mais detalhada.</p>
-  <p>A duração do serviço varia conforme o tamanho do espaço e a complexidade da limpeza.</p>
-
-  <p><strong>COZINHA</strong></p>
-  <p>• Limpeza profunda de fogões, fornos e coifas.</p>
-  <p>• Desengorduramento de azulejos, pisos e bancadas.</p>
-  <p>• Limpeza interna e externa de armários e geladeiras.</p>
-  <p>• Limpeza de frestas e cantos de difícil acesso.</p>
-  <p>• Remoção de sujeiras incrustadas em eletrodomésticos e superfícies.</p>
-
-  <p><strong>BANHEIROS</strong></p>
-  <p>• Desinfecção completa de vasos sanitários, pias, banheiras e chuveiros.</p>
-  <p>• Remoção de manchas de mofo e bolor em azulejos e rejuntes.</p>
-  <p>• Limpeza profunda de box, espelhos e vidros.</p>
-  <p>• Polimento de metais (torneiras, registros, chuveiros).</p>
-  <p>• Limpeza de ralos, incluindo desobstrução se necessário.</p>
-
-  <p><strong>QUARTOS</strong></p>
-  <p>• Limpeza profunda de armários por dentro e por fora.</p>
-  <p>• Limpeza e higienização de colchões e cortinas.</p>
-  <p>• Remoção de manchas em carpetes e tapetes.</p>
-  <p>• Limpeza detalhada de rodapés, portas e janelas.</p>
-  <p>• Aspiração de frestas e cantos de difícil acesso.</p>
-
-  <p><strong>SALAS</strong></p>
-  <p>• Limpeza completa de estofados e tapetes, incluindo retirada de manchas.</p>
-  <p>• Limpeza detalhada de móveis, prateleiras e superfícies de vidro.</p>
-  <p>• Limpeza e polimento de pisos (porcelanato, madeira, mármore, etc.).</p>
-  <p>• Limpeza profunda de janelas e portas de vidro.</p>
-  <p>• Higienização de aparelhos eletrônicos e equipamentos.</p>
-
-  <p><strong>ÁREAS EXTERNAS</strong></p>
-  <p>• Limpeza profunda de quintais, varandas, garagens e áreas de lazer.</p>
-  <p>• Lavagem de pisos e remoção de manchas difíceis.</p>
-  <p>• Limpeza de churrasqueiras, móveis externos e áreas de piscina.</p>
-  <p>• Remoção de folhas, galhos e detritos acumulados.</p>
-
-  <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+    <p><strong>SALA</strong></p>
+    <p>• Limpeza e aspiração de sofás, poltronas e tapetes.</p>
+    <p>• Limpeza de móveis, portas e janelas internas.</p>
+    <p>• Limpeza de pisos e superfícies.</p>
+    <p>• Limpeza de vidros.</p>
 
 
-  <h5><strong>Confira o que está incluído no serviço de Limpeza Pós-Obra</strong></h5>
-  <p>A limpeza pós-obra é indicada para locais recém-reformados ou construídos, onde há excesso de poeira, respingos de tinta, cimento, gesso, e outros resíduos comuns de obras.</p>
+    <p><strong>ÁREA DE SERVIÇO</strong></p>
+    <p>• Limpeza de pisos e azulejos.</p>
+    <p>• Limpeza de tanques, máquinas de lavar e superfícies.</p>
+    <p>• Organização de produtos de limpeza e itens diversos.</p>
 
-  <p><strong>COZINHA</strong></p>
-  <p>• Remoção de respingos de tinta, cimento e rejunte de pisos, paredes e bancadas.</p>
-  <p>• Limpeza interna e externa de armários, gavetas e prateleiras.</p>
-  <p>• Limpeza de vidros, janelas e portas.</p>
-  <p>• Limpeza profunda de eletrodomésticos recém-instalados.</p>
-  <p>• Limpeza detalhada de pias, torneiras e acabamentos. </p>
+  <% elsif @service.description == 'Limpeza pesada' %>
+    <h5><strong>Confira o que está incluído no serviço de Limpeza Pesada</strong></h5>
+    <p>Indicamos a limpeza pesada para locais que estão há muito tempo sem cuidados ou que possuem sujeira acumulada e precisam de uma atenção mais detalhada.</p>
+    <p>A duração do serviço varia conforme o tamanho do espaço e a complexidade da limpeza.</p>
 
-  <p><strong>BANHEIROS</strong></p>
-  <p>• Remoção de resíduos de obra em azulejos, pisos e bancadas.</p>
-  <p>• Limpeza de espelhos, box de vidro e vidros em geral.</p>
-  <p>• Limpeza e polimento de metais (torneiras, registros, chuveiros).</p>
-  <p>• Limpeza e higienização de pias, vasos sanitários e áreas de banho.</p>
-  <p>• Remoção de respingos de tinta, massa corrida e outros materiais.</p>
+    <p><strong>COZINHA</strong></p>
+    <p>• Limpeza profunda de fogões, fornos e coifas.</p>
+    <p>• Desengorduramento de azulejos, pisos e bancadas.</p>
+    <p>• Limpeza interna e externa de armários e geladeiras.</p>
+    <p>• Limpeza de frestas e cantos de difícil acesso.</p>
+    <p>• Remoção de sujeiras incrustadas em eletrodomésticos e superfícies.</p>
 
-  <p><strong>QUARTOS</strong></p>
-  <p>• Limpeza de superfícies de móveis novos ou instalados recentemente.</p>
-  <p>• Limpeza de janelas, vidros, portas e batentes.</p>
-  <p>• Aspiração e limpeza de pisos (cerâmica, madeira, laminado, etc.).</p>
-  <p>• Remoção de pó acumulado em paredes e tetos.</p>
-  <p>• Limpeza de interruptores, tomadas e luminárias.</p>
+    <p><strong>BANHEIROS</strong></p>
+    <p>• Desinfecção completa de vasos sanitários, pias, banheiras e chuveiros.</p>
+    <p>• Remoção de manchas de mofo e bolor em azulejos e rejuntes.</p>
+    <p>• Limpeza profunda de box, espelhos e vidros.</p>
+    <p>• Polimento de metais (torneiras, registros, chuveiros).</p>
+    <p>• Limpeza de ralos, incluindo desobstrução se necessário.</p>
 
-  <p><strong>SALAS</strong></p>
-  <p>• Limpeza de vidros e esquadrias de portas e janelas.</p>
-  <p>• Remoção de respingos de tinta e resíduos de massa corrida em superfícies.</p>
-  <p>• Aspiração e limpeza detalhada de pisos e rodapés.</p>
-  <p>• Limpeza de móveis novos e áreas de instalação de eletrônicos.</p>
-  <p>• Limpeza de paredes, tetos e áreas de acabamento.</p>
+    <p><strong>QUARTOS</strong></p>
+    <p>• Limpeza profunda de armários por dentro e por fora.</p>
+    <p>• Limpeza e higienização de colchões e cortinas.</p>
+    <p>• Remoção de manchas em carpetes e tapetes.</p>
+    <p>• Limpeza detalhada de rodapés, portas e janelas.</p>
+    <p>• Aspiração de frestas e cantos de difícil acesso.</p>
 
-  <p><strong>ÁREAS EXTERNAS</strong></p>
-  <p>• Limpeza de varandas, sacadas, quintais e garagens. </p>
-  <p>• Remoção de resíduos de obra como cimento, areia e restos de materiais.</p>
-  <p>• Lavagem de pisos e limpeza de portas de vidro externas.</p>
-  <p>• Limpeza de áreas de churrasqueiras, jardins e piscinas.</p>
+    <p><strong>SALAS</strong></p>
+    <p>• Limpeza completa de estofados e tapetes, incluindo retirada de manchas.</p>
+    <p>• Limpeza detalhada de móveis, prateleiras e superfícies de vidro.</p>
+    <p>• Limpeza e polimento de pisos (porcelanato, madeira, mármore, etc.).</p>
+    <p>• Limpeza profunda de janelas e portas de vidro.</p>
+    <p>• Higienização de aparelhos eletrônicos e equipamentos.</p>
 
-  <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+    <p><strong>ÁREAS EXTERNAS</strong></p>
+    <p>• Limpeza profunda de quintais, varandas, garagens e áreas de lazer.</p>
+    <p>• Lavagem de pisos e remoção de manchas difíceis.</p>
+    <p>• Limpeza de churrasqueiras, móveis externos e áreas de piscina.</p>
+    <p>• Remoção de folhas, galhos e detritos acumulados.</p>
 
-  <h5><strong>Confira o que está incluído no serviço de Limpeza Pré ou Pós-Mudança</strong></h5>
-  <p>Indicamos esse tipo de limpeza para casas e apartamentos que precisam de um cuidado especial, seja antes de receber os móveis e pertences, ou após a retirada dos mesmos. A limpeza pode variar de acordo com o estado do imóvel e a necessidade do cliente. </p>
+  <% elsif @service.description == 'Limpeza pós obra' %>
+    <h5><strong>Confira o que está incluído no serviço de Limpeza Pós-Obra</strong></h5>
+    <p>A limpeza pós-obra é indicada para locais recém-reformados ou construídos, onde há excesso de poeira, respingos de tinta, cimento, gesso, e outros resíduos comuns de obras.</p>
 
-  <p><strong>COZINHA</strong></p>
-  <p>• Limpeza interna e externa de armários, gavetas e prateleiras.</p>
-  <p>• Desengorduramento de paredes, pisos e azulejos.</p>
-  <p>• Limpeza de pias, bancadas e superfícies.</p>
-  <p>• Limpeza de vidros, janelas, portas e esquadrias.</p>
-  <p>• Limpeza externa de eletrodomésticos, como geladeira, fogão e micro-ondas.</p>
+    <p><strong>COZINHA</strong></p>
+    <p>• Remoção de respingos de tinta, cimento e rejunte de pisos, paredes e bancadas.</p>
+    <p>• Limpeza interna e externa de armários, gavetas e prateleiras.</p>
+    <p>• Limpeza de vidros, janelas e portas.</p>
+    <p>• Limpeza profunda de eletrodomésticos recém-instalados.</p>
+    <p>• Limpeza detalhada de pias, torneiras e acabamentos. </p>
 
-  <p><strong>BANHEIROS</strong></p>
-  <p>• Limpeza e desinfecção de vasos sanitários, pias e chuveiros.</p>
-  <p>• Remoção de resíduos de sabonete, mofo e bolor de azulejos e rejuntes.</p>
-  <p>• Limpeza de espelhos, box de vidro e vidros em geral.</p>
-  <p>• Limpeza de armários e prateleiras.</p>
-  <p>• Polimento de metais e acabamentos.</p>
+    <p><strong>BANHEIROS</strong></p>
+    <p>• Remoção de resíduos de obra em azulejos, pisos e bancadas.</p>
+    <p>• Limpeza de espelhos, box de vidro e vidros em geral.</p>
+    <p>• Limpeza e polimento de metais (torneiras, registros, chuveiros).</p>
+    <p>• Limpeza e higienização de pias, vasos sanitários e áreas de banho.</p>
+    <p>• Remoção de respingos de tinta, massa corrida e outros materiais.</p>
 
-  <p><strong>QUARTOS</strong></p>
-  <p>• Limpeza interna e externa de guarda-roupas e gavetas.</p>
-  <p>• Limpeza de vidros, janelas, portas e batentes.</p>
-  <p>• Aspiração e higienização de pisos, carpetes e tapetes.</p>
-  <p>• Limpeza de rodapés, interruptores e tomadas.</p>
-  <p>• Remoção de pó e sujeira de superfícies e áreas de difícil acesso.</p>
+    <p><strong>QUARTOS</strong></p>
+    <p>• Limpeza de superfícies de móveis novos ou instalados recentemente.</p>
+    <p>• Limpeza de janelas, vidros, portas e batentes.</p>
+    <p>• Aspiração e limpeza de pisos (cerâmica, madeira, laminado, etc.).</p>
+    <p>• Remoção de pó acumulado em paredes e tetos.</p>
+    <p>• Limpeza de interruptores, tomadas e luminárias.</p>
 
-  <p><strong>SALAS</strong></p>
-  <p>• Limpeza de vidros, janelas, portas e esquadrias.</p>
-  <p>• Limpeza profunda de móveis, prateleiras e estantes.</p>
-  <p>• Aspiração e limpeza de pisos, incluindo a remoção de manchas.</p>
-  <p>• Limpeza de espelhos e superfícies de vidro.</p>
-  <p>• Remoção de pó acumulado em paredes, tetos e luminárias.</p>
+    <p><strong>SALAS</strong></p>
+    <p>• Limpeza de vidros e esquadrias de portas e janelas.</p>
+    <p>• Remoção de respingos de tinta e resíduos de massa corrida em superfícies.</p>
+    <p>• Aspiração e limpeza detalhada de pisos e rodapés.</p>
+    <p>• Limpeza de móveis novos e áreas de instalação de eletrônicos.</p>
+    <p>• Limpeza de paredes, tetos e áreas de acabamento.</p>
 
-  <p><strong>ÁREAS EXTERNAS</strong></p>
-  <p>• Limpeza de varandas, sacadas, garagens e quintais.</p>
-  <p>• Lavagem de pisos e remoção de sujeiras acumuladas.</p>
-  <p>• Limpeza de móveis externos e áreas de lazer.</p>
-  <p>• Limpeza de portas de vidro externas e janelas.</p>
+    <p><strong>ÁREAS EXTERNAS</strong></p>
+    <p>• Limpeza de varandas, sacadas, quintais e garagens. </p>
+    <p>• Remoção de resíduos de obra como cimento, areia e restos de materiais.</p>
+    <p>• Lavagem de pisos e limpeza de portas de vidro externas.</p>
+    <p>• Limpeza de áreas de churrasqueiras, jardins e piscinas.</p>
 
- <h5><strong> </strong></h5>
-  <p><strong> </strong></p>
-  <p> </p>
+  <% else%>
+    <h5><strong>Confira o que está incluído no serviço de Limpeza Pré ou Pós-Mudança</strong></h5>
+    <p>Indicamos esse tipo de limpeza para casas e apartamentos que precisam de um cuidado especial, seja antes de receber os móveis e pertences, ou após a retirada dos mesmos. A limpeza pode variar de acordo com o estado do imóvel e a necessidade do cliente. </p>
+
+    <p><strong>COZINHA</strong></p>
+    <p>• Limpeza interna e externa de armários, gavetas e prateleiras.</p>
+    <p>• Desengorduramento de paredes, pisos e azulejos.</p>
+    <p>• Limpeza de pias, bancadas e superfícies.</p>
+    <p>• Limpeza de vidros, janelas, portas e esquadrias.</p>
+    <p>• Limpeza externa de eletrodomésticos, como geladeira, fogão e micro-ondas.</p>
+
+    <p><strong>BANHEIROS</strong></p>
+    <p>• Limpeza e desinfecção de vasos sanitários, pias e chuveiros.</p>
+    <p>• Remoção de resíduos de sabonete, mofo e bolor de azulejos e rejuntes.</p>
+    <p>• Limpeza de espelhos, box de vidro e vidros em geral.</p>
+    <p>• Limpeza de armários e prateleiras.</p>
+    <p>• Polimento de metais e acabamentos.</p>
+
+    <p><strong>QUARTOS</strong></p>
+    <p>• Limpeza interna e externa de guarda-roupas e gavetas.</p>
+    <p>• Limpeza de vidros, janelas, portas e batentes.</p>
+    <p>• Aspiração e higienização de pisos, carpetes e tapetes.</p>
+    <p>• Limpeza de rodapés, interruptores e tomadas.</p>
+    <p>• Remoção de pó e sujeira de superfícies e áreas de difícil acesso.</p>
+
+    <p><strong>SALAS</strong></p>
+    <p>• Limpeza de vidros, janelas, portas e esquadrias.</p>
+    <p>• Limpeza profunda de móveis, prateleiras e estantes.</p>
+    <p>• Aspiração e limpeza de pisos, incluindo a remoção de manchas.</p>
+    <p>• Limpeza de espelhos e superfícies de vidro.</p>
+    <p>• Remoção de pó acumulado em paredes, tetos e luminárias.</p>
+
+    <p><strong>ÁREAS EXTERNAS</strong></p>
+    <p>• Limpeza de varandas, sacadas, garagens e quintais.</p>
+    <p>• Lavagem de pisos e remoção de sujeiras acumuladas.</p>
+    <p>• Limpeza de móveis externos e áreas de lazer.</p>
+    <p>• Limpeza de portas de vidro externas e janelas.</p>
+  <% end %>
 
   <%= link_to "Agende agora",  new_service_booking_path(@service), class: "btn btn-outline-success btn-sm rounded-pill" %>
   <%= link_to 'Todo os serviços', services_path,class: "btn btn-outline-success btn-sm rounded-pill" %>
