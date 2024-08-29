@@ -7,3 +7,12 @@
   opacity: 0.9;
   transition: opacity 0.3s ease;
 }
+
+.btn-outline-newgreen {
+  border-color: $newgreen;
+}
+
+.btn-outline-newgreen:hover {
+  background-color: $newgreen;
+  color: white;
+}
