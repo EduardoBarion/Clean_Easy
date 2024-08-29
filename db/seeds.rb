@@ -347,6 +347,7 @@ booking4 = Booking.new(
   service: service4
 )
 booking4.save!
+
 booking5 = Booking.new(
   proposed_price: 90,
   status: true,
@@ -355,6 +356,7 @@ booking5 = Booking.new(
   service: service5
 )
 booking5.save!
+
 booking6 = Booking.new(
   proposed_price: 115,
   status: true,
@@ -363,6 +365,7 @@ booking6 = Booking.new(
   service: service6
 )
 booking6.save!
+
 booking7 = Booking.new(
   proposed_price: 105,
   status: true,
@@ -371,6 +374,7 @@ booking7 = Booking.new(
   service: service7
 )
 booking7.save!
+
 booking8 = Booking.new(
   proposed_price: 140,
   status: true,
@@ -379,6 +383,7 @@ booking8 = Booking.new(
   service: service8
 )
 booking8.save!
+
 booking9 = Booking.new(
   proposed_price: 80,
   status: true,
