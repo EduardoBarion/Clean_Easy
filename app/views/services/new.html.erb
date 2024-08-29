@@ -1,5 +1,5 @@
 <%= simple_form_for @service do |f| %>
-  <%= f.input :description %>
+  <%= f.input :description, collection: ['Limpeza padrão', 'Limpeza pesada', 'Limpeza pós obra', 'Limpeza pré ou pós mudança']%>
   <%= f.input :price %>
   <%= f.input :photos, as: :file, input_html: { multiple: true } %>
   <%= f.button :submit %>
