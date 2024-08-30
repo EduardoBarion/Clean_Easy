@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="mb-4">Qual o melhor dia para sua limpeza?</h1>
+
+  <%= form_with model: [@service, @booking], local: true do |f| %>
+  <%= f.label :date, 'Data:' %>
+  <%= f.date_field :date %>
+  <%= f.submit 'Agendar', class: 'btn btn-outline-newgreen m-4' %>
+  <% end %>
+  <%= link_to 'Início', root_path %>
+</div>

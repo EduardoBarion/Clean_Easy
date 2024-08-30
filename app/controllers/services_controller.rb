@@ -4,7 +4,9 @@ class ServicesController < ApplicationController
   end
 
   def show
+    @booking = Booking.new
     @service = Service.find(params[:id])
+
   end
 
   def new
