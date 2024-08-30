@@ -1,5 +1,5 @@
 <div class="container">
-  <h1><strong><%= @service.user.name %></strong></h1>
+  <h1 class="p-3"><strong><%= @service.user.name %></strong></h1>
   <h4><strong>Serviço:</strong> <%= @service.description %></h4>
   <div class="row justify-content-center">
     <div class="col-6">
@@ -177,7 +177,7 @@
   <% end %>
 
 
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="btn btn-outline-success rounded-pill m-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Agende agora.
     </button>
 
@@ -202,5 +202,5 @@
 
 
 
-  <%= link_to 'Todo os serviços', services_path,class: "btn btn-outline-success btn-sm rounded-pill" %>
+  <%= link_to 'Todo os serviços', services_path,class: "btn btn-outline-success rounded-pill" %>
 </div>
