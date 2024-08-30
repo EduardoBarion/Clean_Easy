@@ -1,0 +1,11 @@
+
+<%= turbo_frame_tag "booking_form" do %>
+  <div class="container">
+    <h1 class="mb-4">Escolha uma data</h1>
+
+    <%= simple_form_for [service, booking] do |f| %>
+      <%= f.input :date, label: 'Data:', as: :string, input_html: { type: 'date' } %>
+      <%= f.submit 'Agendar', class: 'btn btn-outline-newgreen m-4' %>
+    <% end %>
+  </div>
+<% end %>
