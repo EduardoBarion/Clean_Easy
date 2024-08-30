@@ -7,6 +7,7 @@
         <div class="card-body h-100 card">
           <h5 class="card-title"><strong><%= booking.service.user.name %></strong></h5>
           <p class="card-text"><strong>Tipo de serviço: </strong><%= booking.service.description %></p>
+          <p class="card-text"><strong>Preço: </strong><%= number_to_currency(booking.service.price, unit: 'R$', format: '%u %n', separator: ',', delimiter: '.') %></p></p>
           <p class="card-text"><strong>Dia: </strong><%= booking.date.strftime('%d/%m/%Y') %></p>
         </div>
       </li>
