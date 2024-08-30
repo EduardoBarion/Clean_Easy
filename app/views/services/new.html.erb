@@ -1,7 +1,14 @@
-<%= simple_form_for @service do |f| %>
-  <%= f.input :description, collection: ['Limpeza padrão', 'Limpeza pesada', 'Limpeza pós obra', 'Limpeza pré ou pós mudança']%>
-  <%= f.input :price %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <%= f.button :submit %>
-<% end %>
-<%= link_to 'Início', root_path %>
+<div class="container">
+  <%= simple_form_for @service do |f| %>
+    <%= f.input :description, collection: ['Limpeza padrão', 'Limpeza pesada', 'Limpeza pós obra', 'Limpeza pré ou pós mudança']%>
+    <%= f.input :price %>
+    <%= f.input :Imagem, as: :file, input_html: { multiple: true } %>
+    <%= f.button :submit, class: "btn btn-outline-newgreen btn-lg mx-2" %>
+  <% end %>
+</div>
+
+<br>
+
+<div class="container">
+  <%= link_to 'Início', root_path, class: "btn btn-outline-newgreen btn-lg mx-2"%>
+</div>
