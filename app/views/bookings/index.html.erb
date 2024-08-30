@@ -8,7 +8,6 @@
           <h5 class="card-title"><strong><%= booking.service.user.name %></strong></h5>
           <p class="card-text"><strong>Tipo de serviço: </strong><%= booking.service.description %></p>
           <p class="card-text"><strong>Dia: </strong><%= booking.date.strftime('%d/%m/%Y') %></p>
-          <%= link_to 'Mais informações', service_booking_path(booking.service, booking), class:'btn btn-outline-newgreen' %>
         </div>
       </li>
     <% end %>

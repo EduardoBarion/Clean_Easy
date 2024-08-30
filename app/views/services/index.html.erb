@@ -6,7 +6,15 @@
     <% @services.each do |service| %>
       <div class="col-md-3 mb-3">
         <div class="card h-100">
-          <img src="https://blog.parafuzo.com/wp-content/uploads/2021/09/household-cleaning-supplies-480x288.jpeg" />
+          <% if service.description == 'Limpeza padrão' %>
+            <img src="https://blog.parafuzo.com/wp-content/uploads/2021/09/household-cleaning-supplies-480x288.jpeg" class="h-100" />
+          <% elsif service.description == 'Limpeza pesada' %>
+            <img src="https://cdn.casapraticaqualita.com.br/wp-content/uploads/2020/06/2320-para-fazer-uma-limpeza-pesada-voce-vai-orig-2.jpg" class="h-100 "/>
+          <% elsif service.description == 'Limpeza pós obra' %>
+            <img src="https://whiteningmultiservicos.com.br/wp-content/uploads/2022/06/2022-07-07-produtos-para-limpeza-pos-obra-802x506.jpg" class="h-100" />
+          <% else%>
+            <img src="https://img.freepik.com/fotos-premium/produtos-de-limpeza-escovas-garrafas-esponjas-trapo-luvas-de-borracha-amarelas-em-fundo-branco_937679-35259.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724025600&semt=ais_hybrid" class="h-100" />
+          <% end %>
           <div class="card-body">
             <h3 class="card-title"><%= service.description %></h3>
             <h5 class="card-subtitle mb-2 text-muted"><%= service.user.name %></h5>
