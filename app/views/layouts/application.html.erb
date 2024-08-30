@@ -48,8 +48,11 @@
   </div>
 </div>
 
-<%= render "shared/flashes" %>
-
-    <%= yield %>
+  <div>
+    <%= render "shared/flashes" %>
+    <div class="navbar-margin ">
+      <%= yield %>
+    </div>
+  </div>
   </body>
 </html>
