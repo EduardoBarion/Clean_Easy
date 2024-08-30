@@ -4,44 +4,17 @@ class BookingsController < ApplicationController
     @bookings = Booking.all
   end
 
-  def new
-    @service = Service.find(params[:service_id])
-    @booking = Booking.new
-  end
-
   def create
     @service = Service.find(params[:service_id])
     @booking = Booking.new(booking_params)
     @booking.user = current_user
     @booking.service = @service
     if @booking.save
-      redirect_to service_booking_path(@service, @booking)
+      render turbo_stream: turbo_stream.replace("booking_form", partial: "bookings/confirmed")
     else
-      render :new, status: :unprocessable_entity
+      render turbo_stream: turbo_stream.replace("booking_form", partial: "bookings/form", locals: {service: @service, booking: @booking})
     end
   end
-
-  def show
-    @booking = Booking.find(params[:id])
-  end
-
-  # def update
-  #   @booking = Booking.find(params[:id])
-  #   if @booking.update(post_params)
-  #     redirect_to @booking
-  #   else
-  #     render :edit
-  #   end
-  # end
-
-  # def edit
-  #   @booking = Booking.find(params[:id])
-  # end
-
-  # def destroy
-  #   @booking = Booking.find(params[:id])
-  #   @booking.destroy
-  # end
 
   private
 
