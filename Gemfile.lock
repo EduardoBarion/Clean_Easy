@@ -319,6 +319,7 @@ DEPENDENCIES
   dotenv-rails
   error_highlight (>= 0.4.0)
   font-awesome-sass (~> 6.1)
+  i18n
   importmap-rails
   jbuilder
   pg (~> 1.1)
