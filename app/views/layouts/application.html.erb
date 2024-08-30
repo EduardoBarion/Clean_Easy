@@ -12,38 +12,39 @@
 
 
 
-  <body><div class="navbar fixed-top navbar-expand-sm navbar-newgreen navbar-lewagon">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+  <body>
+    <div class="navbar fixed-top navbar-expand-sm navbar-newgreen navbar-lewagon">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../#">
+          <span class="written-logo"> CleanEasy </span>
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <%# <img src="https://static.vecteezy.com/system/resources/previews/010/141/720/non_2x/cleaner-icon-cleaning-services-sign-symbol-design-free-png.png" alt="navbar"> %>
-      <span class="written-logo">  CleanEasy</span>
-
-   </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-          <li class="nav-item active">
-            <a class="btn btn-outline-newgreen mx-2" href="#"><strong>Entrar</strong></a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-outline-newgreen" href="#"><strong>Cadastrar</strong></a>
-          </li>
-          <li class="nav-item dropdown">
-            <!--<img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" /> -->
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
-            </div>
-          </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
-      </ul>
-    </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+              <a class="btn btn-outline-newgreen mx-2" href="../#"><strong>Home</strong></a>
+            </li>
+            <li class="nav-item active">
+              <a class="btn btn-outline-newgreen mx-2" href="/users/sign_in"><strong>Entrar</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-newgreen" href="/users/sign_up"><strong>Cadastrar</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-newgreen" href="/users/sign_out"><strong>Log out</strong></a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
+              </div>
+            </li>
+        </ul>
+      </div>
   </div>
 </div>
 
